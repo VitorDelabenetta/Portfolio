@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Portfólio | Front-End</title>
+    <meta name="description" content="Projeto de portfólio pessoal desenvolvido utilizando HTML, CSS e JavaScript.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Delabenetta">
+    <link rel="stylesheet" type="text/css" href="./assets/estilos/padroes.css">
+    <link rel="stylesheet" type="text/css" href="./assets/estilos/inicial.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <p class="texto-especial">Dela<span>benetta</span></p>
+        <nav class="barra-navegacao">
+            <a href="#cabecalho" class="texto-enfase">Inicio</a>
+            <a href="#sobre" class="texto-enfase">Sobre</a>
+            <a href="#habilidades" class="texto-enfase">Habilidades</a>
+            <a href="#projetos" class="texto-enfase">Projetos</a>
+            <img src="./assets/imagens/icone-lua.svg" id="icone" class="icone">
+        </nav>
+    </header>
+    <main>
+        <div id="botao-subir">
+            <a href="#cabecalho" class="texto">Voltar ao início</a>
+        </div>
+        <section id="inicio" class="template-grid">
+            <div class="conteudo-esquerda">
+                <h1 class="titulo">Vitor Delabenetta</h1>
+                <h2 class="subtitulo">Desenvolvimento Web.</h2>
+                <p class="texto">Algum texto falando do que está fazendo atualmente, como bacharelado ou estudos. Pode-se falar dos cursos desenvolvidos na área também.</p>
+                <div class="redes-sociais">
+                    <div class="fundo-linkedin">
+                        <a href="https://www.linkedin.com/in/gabriel-delabenetta/" target="_blank"><img src="./assets/imagens/logo-linkedin.svg" class="icone"></a>
+                    </div>
+                    <div class="fundo-instagram">
+                        <a href="https://www.instagram.com/invites/contact/?i=uyo65s6sqplr&" target="_blank"><img src="./assets/imagens/logo-instagram.svg" class="icone"></a>
+                    </div>
+                    <div class="fundo-github">
+                        <a href="https://github.com/VitorDelabenetta"><img src="./assets/imagens/logo-github.svg" class="icone"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo-direita">
+                <img src="./assets/imagens/ilustracao-inicial.svg" alt="ilustracao-tecnologia">
+            </div>
+        </section>
+        <section id="sobre" class="template-grid">
+            <div class="conteudo-esquerda">
+                <h2 class="subtitulo-especial">Sobre Mim</h2>
+                <p class="texto">Falando sobre a descrição ao lado se tratar da trajetória dentro do campo da programação. Abaixo estará disponibilizado meu currículo atualizado.</p>
+                <a href="./assets/curriculo/curriculo.html" id="botao-curriculo" class="texto-enfase">Currículo <img src="./assets/imagens/icone-curriculo.svg" class="icone"></a>
+            </div>
+            <div class="conteudo-direita">
+                <p class="texto">Texto longo falando sobre trajetória, contato com a área, cursos, etc. <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque egestas porttitor purus, at facilisis urna interdum vel. Nunc molestie elementum erat at pharetra. Suspendisse ultrices, diam aliquam vestibulum porta, lorem leo pretium velit, id imperdiet libero tortor id nibh. Etiam scelerisque ipsum justo, et aliquet quam faucibus ac. Vestibulum ex justo, vehicula sit amet eleifend vel, dapibus nec augue. Nam bibendum nibh a nulla aliquet, ac dictum nisl consequat. In sit amet felis sed nisi porttitor pellentesque sit amet egestas nisl. Cras suscipit turpis ut augue hendrerit laoreet et at velit. Aenean et elit quis felis mattis rutrum. Cras ex enim, placerat a lectus eu, vehicula condimentum lectus. Quisque magna quam, dapibus sed gravida eget, ultricies tristique augue. Etiam eget mollis justo, lacinia auctor est. In hac habitasse platea dictumst. Phasellus ultricies quam at quam egestas pulvinar. Pellentesque sed blandit diam, non semper est. Etiam hendrerit elit mauris, sed facilisis urna vulputate quis. Vivamus sollicitudin sodales ante.<br><br>Fusce porta, turpis sed placerat maximus, enim leo volutpat dolor, ac placerat elit erat consectetur mauris. Duis quis blandit leo. Nulla molestie ullamcorper molestie. Integer vel nulla egestas justo lacinia ornare at at odio</p>
+            </div>
+        </section>
+        <section id="habilidades" class="template-grid">
+            <div class="descricao">
+                <h2 class="subtitulo-especial">Habilidades</h2>
+                <p class="texto">Pequeno texto falando sobre o assunto de forma resumida, trazendo outros conhecimentos (parte Java e JSP). Contar a respeito do período passado no Senac desenvolvendo o projeto e estudando programação.</p>
+                <p class="texto-especial">Programação Front-End</p>
+            </div>
+            <div class="tecnologias">
+                <div class="agrupamento-superior">
+                    <div class="fundo-html">
+                        <img src="./assets/imagens/logo-html.svg" class="icone">
+                        <p class="texto-enfase">Html</p>
+                    </div>
+                    <div class="fundo-css">
+                        <img src="./assets/imagens/logo-css.svg" class="icone">
+                        <p class="texto-enfase">Css</p>
+                    </div>
+                    <div class="fundo-javascript">
+                        <img src="./assets/imagens/logo-javascript.svg" class="icone">
+                        <p class="texto-enfase">Javascript</p>
+                    </div>
+                </div>
+                <div class="agrupamento-inferior">
+                    <div class="fundo-git">
+                        <img src="./assets/imagens/logo-git.svg" class="icone">
+                        <p class="texto-enfase">Git</p>
+                    </div>
+                    <div class="fundo-figma">
+                        <img src="./assets/imagens/logo-figma.svg" class="icone">
+                        <p class="texto-enfase">Figma</p>
+                    </div>
+                    <div class="fundo-vscode">
+                        <img src="./assets/imagens/logo-vscode.svg" class="icone">
+                        <p class="texto-enfase">Vs Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos" class="template-grid">
+            <div class="agrupamento-projetos">
+                <div class="card-projeto">
+                    <img src="./assets/imagens/projeto-mediconnect.svg" class="ilustracao-projeto">
+                    <div>
+                        <p class="texto-especial">Sistema MediConnect</p>
+                        <p class="texto">Trabalhei desenvolvendo o jsp e os estilos das páginas.</p>
+                    </div>
+                    <a href="https://github.com/Dev2Health/MediConnect" target="_blank"><img src="./assets/imagens/icone-seta.svg" class="icone"></a>
+                </div>
+                <div class="card-projeto">
+                    <img src="./assets/imagens/projeto-web.svg" class="ilustracao-projeto">
+                    <div>
+                        <p class="texto-especial">Página Web</p>
+                        <p class="texto">Projeto desenvolvido para treinar e estudar mais sobre o front-end.</p>
+                    </div>
+                    <a href="https://github.com/VitorDelabenetta/Web-Page" target="_blank"><img src="./assets/imagens/icone-seta.svg" class="icone"></a>
+                </div>
+                <div class="card-projeto">
+                    <img src="./assets/imagens/projeto-error.svg" class="ilustracao-projeto">
+                    <div>
+                        <p class="texto-especial">Página de Erro</p>
+                        <p class="texto">Página de erro simples, aplicando os conhecimentos em CSS.</p>
+                    </div>
+                    <a href="https://github.com/VitorDelabenetta/404-Page" target="_blank"><img src="./assets/imagens/icone-seta.svg" class="icone"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/scripts/pagina-inicial.js"></script>
+</body>
+</html>

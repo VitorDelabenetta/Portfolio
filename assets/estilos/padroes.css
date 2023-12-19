@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* coloração */
+    --cor-principal: #FBF9F3;
+    --cor-secundaria: #232323;
+    --gradiente-tecnologias: linear-gradient(#2323238c, #2323238c);
+    --cinza: #CCCCCC;
+    --verde: #65CCB8;
+    /* fonte */
+    --fonte: 'Fredoka', sans-serif;
+}
+
+.tema-escuro {
+    --cor-principal: #232323;
+    --cor-secundaria: #FBF9F3;
+    --gradiente-tecnologias: linear-gradient(#FBF9F3B7, #FBF9F3B7);
+}
+
+::selection {
+    background-color: var(--cinza);
+}
+
+/* Padronização dos Textos */
+
+.texto {
+    font-family: var(--fonte);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.texto-especial {
+    font-family: var(--fonte);
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.texto-enfase {
+    font-family: var(--fonte);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.titulo {
+    font-family: var(--fonte);
+    font-weight: 700;
+    font-size: 95px;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+.subtitulo {
+    font-family: var(--fonte);
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.subtitulo-especial {
+    font-family: var(--fonte);
+    font-weight: 500;
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+
+/* Grid - Posicionamento */
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+}
+
+.conteudo-esquerda {
+    grid-column: 2 / 7;
+}
+
+.conteudo-direita {
+    grid-column: 7 / 12;
+}
+
+/* Ícones - Tamanho */
+
+.icone {
+    height: 45px;
+    cursor: pointer;
+}

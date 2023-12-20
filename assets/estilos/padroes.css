@@ -18,6 +18,7 @@ html {
     --cor-secundaria: #232323;
     --gradiente-tecnologias: linear-gradient(#2323238c, #2323238c);
     --cinza: #CCCCCC;
+    --cinza-escuro: #8c8c8c;
     --verde: #65CCB8;
     /* fonte */
     --fonte: 'Fredoka', sans-serif;
@@ -26,14 +27,14 @@ html {
 .tema-escuro {
     --cor-principal: #232323;
     --cor-secundaria: #FBF9F3;
-    --gradiente-tecnologias: linear-gradient(#FBF9F3B7, #FBF9F3B7);
+    --gradiente-tecnologias: linear-gradient(#65CCB8C1, #65CCB8C1);
 }
 
 ::selection {
     background-color: var(--cinza);
 }
 
-/* Padronização dos Textos */
+/* padronização dos textos */
 
 .texto {
     font-family: var(--fonte);
@@ -76,7 +77,7 @@ html {
     letter-spacing: 3px;
 }
 
-/* Grid - Posicionamento */
+/* posicionamentos do grid */
 
 .template-grid {
     display: grid;
@@ -92,9 +93,13 @@ html {
     grid-column: 7 / 12;
 }
 
-/* Ícones - Tamanho */
+/* ícones */
 
 .icone {
     height: 45px;
     cursor: pointer;
+}
+
+.icone-pequeno {
+    height: 30px;
 }

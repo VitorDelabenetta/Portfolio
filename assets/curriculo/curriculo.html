@@ -9,8 +9,126 @@
     <link rel="stylesheet" type="text/css" href="../estilos/padroes.css">
     <link rel="stylesheet" type="text/css" href="../estilos/curriculo.css">
 </head>
-<body>
+<body class="template-grid">
+
     <!-- Opção para baixar o currículo ao final da página -->
-    
+
+    <main>
+        <div class="curriculo-superior">
+            <div>
+                <h1 class="subtitulo">Vitor Gabriel de Souza Delabenetta <span>{</span></h1>
+                <p class="texto-especial">&lt!-- Estudante de programação Front-End para web --&gt</p>
+            </div>
+            <div class="download">
+                <a href="./vitor_delabenetta_curriculo.pdf" download="vitor_delabenetta_curriculo" class="texto"><img src="../imagens/icone-download.svg" class="icone">.pdf</a>
+            </div>
+        </div>
+
+        <div class="curriculo-conteudo">
+
+            <section id="formacoes">
+                <h2 class="subtitulo">Formação {</h2>
+                <div class="formacao-psicologia">
+                    <p class="texto-enfase"><img src="../imagens/icone-psicologia.svg" class="icone-pequeno">Bacharelado em Psicologia - <abbr title="Centro Universitário Leonardo da VInci">Uniasselvi</abbr> ;</p>
+                    <!-- Estilizar o texto do abbr - mudar a cor da etiqueta para fundo escuro e borda clara, border-radius: 5px -->
+                    <p class="texto">Presencial, Noturno - Blumenau, SC ;</p>
+                    <p class="texto">Jun 2021 - Jun 2026 ;</p>
+                    <p class="status texto">// Em andamento</p>
+                </div>
+                <div class="formacao-programador">
+                    <p class="texto-enfase"><img src="../imagens/icone-tecnologia.svg" class="icone-pequeno">Capacitação Full-Stack - <abbr title="Serviço Nacional de Aprendizagem Comercial">Senac</abbr> ;</p>
+                    <p class="texto">Presencial, Matutino - Blumenau, SC ;</p>
+                    <p class="texto">Mar 2023 - Dez 2023 ;</p>
+                    <p class="status texto">// Concluído</p>
+                </div>
+                <span class="subtitulo">}</span>
+            </section>
+
+            <section id="cursos">
+                <h2 class="subtitulo">Cursos {</h2>
+                <div>
+                    <!-- Um ao lado do outro, dois em cada:
+
+                    Introdução à Programação - EBAC - Escola Britânica de Artes Criativas e Tecnologia
+                    Algoritmos - Uniasselvi - Centro Universitário Leonardo da Vinci
+
+                    Assistente Administrativo - Escola SaibaJá
+                    Informática Básica - Escola Saibajá 
+                    -->
+                </div>
+                <span class="subtitulo">}</span>
+            </section>
+
+            <section id="hardskills">
+                <h2 class="subtitulo">Hardskills {</h2>
+                <div class="template-grid">
+                    <div class="esquerda">
+                        <div class="hardskill-html">
+                            <p class="texto">Html</p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="hardskill-css">
+                            <p class="texto">Css</p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="hardskill-javascript">
+                            <p class="texto">Javascript</p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>                                
+                        <div class="hardskill-java">
+                            <p class="texto">Java</p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>    
+                    </div>    
+                    <div class="direita">
+                        <div class="hardskill-git">
+                            <p class="texto">Git</p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>    
+                        <div class="hardskill-github">
+                            <p class="texto">Github</p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>    
+                        <div class="hardskill-figma">
+                            <p class="texto">Figma</p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>    
+                        <div class="hardskill-vscode">
+                            <p class="texto"><abbr title="Virtual Studio Code">VS Code</abbr></p>
+                            <span class="barra">
+                                <span></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="subtitulo">}</span>
+            </section>
+            <section id="softskills">
+                <h2 class="subtitulo">Softskills {</h2>
+                <div class="habilidades">
+                    <p class="etiqueta texto">Flexibilidade Cognitiva</p>
+                    <p class="etiqueta texto">Criatividade</p>
+                    <p class="etiqueta texto">Lógica de Programação</p>
+                    <p class="etiqueta texto">Adaptabilidade</p>
+                    <p class="etiqueta texto">Resolução de Problemas</p>
+                </div>
+                <span class="subtitulo">}</span>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

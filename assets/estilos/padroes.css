@@ -28,6 +28,10 @@ html {
     --cor-principal: #232323;
     --cor-secundaria: #FBF9F3;
     --gradiente-tecnologias: linear-gradient(#65CCB8C1, #65CCB8C1);
+
+    & #icone-curriculo {
+        filter: brightness(0);
+    }
 }
 
 ::selection {

@@ -27,7 +27,7 @@ html {
 .tema-escuro {
     --cor-principal: #232323;
     --cor-secundaria: #FBF9F3;
-    --gradiente-tecnologias: linear-gradient(#65CCB8C1, #65CCB8C1);
+    --gradiente-tecnologias: linear-gradient(#65CCB7AE, #65CCB7AE);
 
     & #icone-curriculo {
         filter: brightness(0);
@@ -63,7 +63,7 @@ html {
 .titulo {
     font-family: var(--fonte);
     font-weight: 700;
-    font-size: 95px;
+    font-size: 90px;
     letter-spacing: 5px;
     line-height: 1;
 }
@@ -77,7 +77,7 @@ html {
 .subtitulo-especial {
     font-family: var(--fonte);
     font-weight: 500;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 3px;
 }
 

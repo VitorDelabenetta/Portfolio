@@ -136,6 +136,10 @@ section {
     background-color: var(--verde);
 }
 
+#sobre .conteudo-esquerda a img {
+    width: 35px;
+}
+
 #icone-curriculo {
     filter: brightness(100);
 }
@@ -166,11 +170,11 @@ section {
 }
 
 #habilidades .tecnologias {
+    grid-column: 6 / 12;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-column: 6 / 12;
 }
 
 .tecnologias [class*="agrupamento-"] {
@@ -183,20 +187,20 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200px;
-    width: 200px;
-    padding-top: 50px;
+    height: 150px;
+    width: 150px;
+    padding-top: 40px;
     background-color: var(--cor-principal);
     border-radius: 5px;
 }
 
 .tecnologias [class*="agrupamento-"] [class*="fundo-"]:hover .texto-enfase {
     color: var(--cor-secundaria);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .tecnologias [class*="agrupamento-"] img {
-    height: 90px;
+    height: 65px;
 }
 
 .tecnologias [class*="agrupamento-"] .texto-enfase {
@@ -210,21 +214,16 @@ section {
 .agrupamento-projetos {
     grid-column: 2 / 12;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 45px;
 }
 
-
 .card-projeto {
     display: flex;
     flex-direction: column;
     width: 25vw;
-}
-
-.card-projeto:hover .card-imagem img {
-    transition: all 300ms ease;
-    height: 100%;
 }
 
 .card-imagem {
@@ -238,22 +237,25 @@ section {
 
 .card-imagem img {
     height: 95%;
+    width: 95%;
 }
 
 .card-conteudo {
     border: 3px solid var(--cor-secundaria);
     border-radius: 0 0 5px 5px;
+    padding: 10px 0;
 }
 
 .card-conteudo .tecnologias {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     
 }
 
 .card-conteudo .tecnologias span {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 5px 10px;
     background-color: var(--verde);
     border-radius: 5px;
@@ -262,7 +264,7 @@ section {
 }
 
 .card-conteudo .descricao {
-    height: 80px;
+    height: calc(100% + 20px);
     text-align: center;
     margin: 0 20px;
 }
@@ -284,3 +286,152 @@ section {
 }
 
 /* MIDIA QUERRY - RESPONSIVIDADE EM TELAS MENORES */
+
+@media screen and (max-width: 1200px) {
+
+    /* início */
+
+    #inicio .conteudo-esquerda {
+        grid-column: 2 / 12;
+    }
+
+    #inicio .conteudo-direita {
+        display: none;
+    }
+
+    /* habilidades */
+
+    #habilidades {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8.33vw;
+    }
+
+    .tecnologias [class*="agrupamento-"] {
+        gap: 35px;
+    }
+
+    #habilidades .tecnologias {
+        flex-direction: row;
+        gap: 35px;
+        margin-top: 45px;
+    }
+
+    #habilidades .descricao .subtitulo-especial {
+        text-align: center;
+    }
+
+    .tecnologias [class*="agrupamento-"] [class*="fundo-"] {
+        height: 120px;
+        width: 120px;
+    }
+
+    .tecnologias [class*="agrupamento-"] img {
+        height: 45px;
+    }
+
+    .tecnologias [class*="agrupamento-"] .texto-enfase {
+        font-size: 16px;
+    }
+
+    /* projetos */
+
+    .card-conteudo .tecnologias span:nth-child(4) {
+        display: none;
+    }
+
+    .card-conteudo .botao {
+        margin: 10px 0;
+    }
+    .card-conteudo .botao a {
+        transition: all 300ms ease;
+        border-radius: 5px;
+        width: 100px;
+        height: 45px;
+    }
+    .card-conteudo .botao a img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    /* projetos */
+
+    .agrupamento-projetos {
+        gap: 0;
+    }
+
+    .card-projeto {
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .card-imagem {
+        width: 350px;
+        height: 200px;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .card-imagem img {
+        height: 85%;
+        width: 85%;
+    }
+
+    .card-conteudo {
+        height: 200px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .card-conteudo .tecnologias {
+        justify-content: center;
+        gap: 45px;
+    }
+
+    .card-conteudo .descricao {
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    /* cabeçalho */
+
+    #cabecalho .barra-navegacao a {
+        display: none;
+    }
+
+    /* sobre */
+
+    #sobre [class*="conteudo-"] {
+        grid-column: 2 / 12;
+    }
+
+    #sobre .conteudo-esquerda p {
+        width: 100%;
+    }
+
+    /* habilidades */
+
+    #habilidades .descricao .texto {
+        display: none;
+    }
+
+    #habilidades .tecnologias {
+        flex-direction: column;
+    }
+
+    .tecnologias [class*="agrupamento-"] {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    /* projetos */
+
+    .card-imagem {
+        display: none;
+    }
+
+}

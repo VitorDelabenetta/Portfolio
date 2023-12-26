@@ -140,6 +140,10 @@ section {
     filter: brightness(100);
 }
 
+#sobre .conteudo-direita .texto {
+    padding-bottom: 25px;
+}
+
 /* tecnologias */
 
 #habilidades {

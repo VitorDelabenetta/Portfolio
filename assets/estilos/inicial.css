@@ -4,6 +4,7 @@ body {
 }
 
 section {
+	min-height: 720px;
     height: 100vh;
 }
 
